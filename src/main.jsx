@@ -1,7 +1,6 @@
 import ReactDOM from 'react-dom/client'
 import './index.css'
-import CustomHookForm from "./02-useEffect/CustomHookForm.jsx";
-
+import MultipleCustomHooks from "./03-useFetch/MultipleCustomHooks.jsx";
 ReactDOM.createRoot(document.getElementById('root')).render(
-    <CustomHookForm/>
+    <MultipleCustomHooks/>
 )
