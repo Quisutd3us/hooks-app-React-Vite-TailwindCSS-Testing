@@ -1,7 +1,8 @@
 import ReactDOM from 'react-dom/client'
 import './index.css'
-import Layout from "./04-UseLayoutEffect/Layout.jsx";
+import MemorizeHook from "./05-useMemo/MemorizeHook.jsx";
+
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-    <Layout/>
+    <MemorizeHook/>
 )
