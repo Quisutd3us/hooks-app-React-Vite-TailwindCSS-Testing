@@ -1,6 +1,7 @@
 import PropTypes from "prop-types";
 import {memo} from "react";
 
+// eslint-disable-next-line react/display-name
 const ButtonCounter = memo(({onIncrement}) => {
   console.log('click..')
   return (
