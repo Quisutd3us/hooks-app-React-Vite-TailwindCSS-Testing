@@ -1,8 +1,8 @@
 import ReactDOM from 'react-dom/client'
 import './index.css'
-import MemorizeHook from "./05-useMemo/MemorizeHook.jsx";
+import {Father} from "./07-tarea-memo/Father.jsx";
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-    <MemorizeHook/>
+    <Father/>
 )

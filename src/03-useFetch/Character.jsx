@@ -1,5 +1,5 @@
 import PropTypes from "prop-types";
-import {useEffect, useLayoutEffect, useRef, useState} from "react";
+import { useLayoutEffect, useRef, useState} from "react";
 
 const Character = ({name, status, species}) => {
   const dimensions = useRef()
