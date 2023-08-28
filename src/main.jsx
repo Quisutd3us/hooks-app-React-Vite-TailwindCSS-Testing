@@ -1,8 +1,9 @@
 import ReactDOM from 'react-dom/client'
 import './index.css'
-import {Father} from "./07-tarea-memo/Father.jsx";
+import {TodoApp} from "./08-Reducer/TodoApp.jsx";
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-    <Father/>
+    <TodoApp/>
 )
+
