@@ -1,9 +1,9 @@
 import ReactDOM from 'react-dom/client'
 import './index.css'
-import {TodoApp} from "./08-Reducer/TodoApp.jsx";
+import {MainApp} from "./09-useContext/MainApp.jsx";
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-    <TodoApp/>
+    <MainApp/>
 )
 
