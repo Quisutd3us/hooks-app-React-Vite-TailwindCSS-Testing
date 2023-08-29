@@ -1,3 +1,4 @@
+import {describe,test,expect} from "@jest/globals";
 import {act, renderHook} from "@testing-library/react";
 import {UseCounter} from '../../src/Hooks/index.js'
 describe('Suit of tests for Custom Hook UseCounter.js',()=>{
