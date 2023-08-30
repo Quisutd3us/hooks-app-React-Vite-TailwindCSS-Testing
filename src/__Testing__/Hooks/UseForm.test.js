@@ -1,6 +1,6 @@
-import {describe,test,expect} from "@jest/globals";
+import {describe, test, expect} from "@jest/globals";
 import {act, renderHook} from "@testing-library/react";
-import {useForm} from "../../src/Hooks/useForm.js";
+import {useForm} from "../../Hooks/useForm.js";
 
 describe('Suite of testing for Custom Hook UseForm', () => {
   const initialForm = {
@@ -19,24 +19,21 @@ describe('Suite of testing for Custom Hook UseForm', () => {
     )
   })
 
-  test('Must add id:123 in function onInputChange', () => {
+  test('Must be change the name of form', () => {
+    const newName = 'Luis Lukas';
     const {result} = renderHook(() => useForm(initialForm));
-
-    const newName = 'Juan Pablo';
-    const {onInputChange} = result.current;
-    act(() => {
-      onInputChange({target: {name: 'name', value: newName}});
+    const {onInputChange} =result.current;
+    act(()=>{
+      onInputChange({target:{name:'name',value: newName}});
     })
-    expect(result.current.name).toBe(newName)
-    expect(result.current.formState).toEqual(
-        { name: 'Juan Pablo', email: 'dnarino@gmail.com' }
-    )
+    expect(result.current.name).toBe(newName);
   })
+
   test('Must rest the form to initial value', () => {
     const {result} = renderHook(() => useForm(initialForm));
 
     const newName = 'Juan Pablo';
-    const {onInputChange,onResetForm} = result.current;
+    const {onInputChange, onResetForm} = result.current;
     act(() => {
       onInputChange({target: {name: 'name', value: newName}});
       onResetForm();

@@ -2,15 +2,13 @@ import {useFetch, UseCounter} from "../Hooks";
 import LoadingCharacter from "./LoadingCharacter.jsx";
 import Character from "./Character.jsx";
 
-
 const MultipleCustomHooks = () => {
-  const {counter, increment, decrement, reset} = UseCounter(1)
+  const {counter, increment, decrement, reset} = UseCounter()
   const {data, isLoading} = useFetch(`https://rickandmortyapi.com/api/character/${counter}`)
   const {id} = !!data && data;
   return (
       <>
         <div className={'container'}>
-
           <div className={"row"}>
             <div className={"col-12"}>
               <h1 className={'display-4 my-5'}>Rick & Morty Characters..</h1>
@@ -46,8 +44,6 @@ const MultipleCustomHooks = () => {
               </button>
             </div>
           </div>
-
-
         </div>
       </>
   )
