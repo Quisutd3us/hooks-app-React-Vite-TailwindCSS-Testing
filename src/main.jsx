@@ -1,8 +1,11 @@
 import ReactDOM from 'react-dom/client'
 import './index.css'
-import MultipleCustomHooks from "./03-useFetch/MultipleCustomHooks.jsx";
+import {MainApp} from "./09-useContext/MainApp.jsx";
+import {BrowserRouter} from "react-router-dom";
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-    <MultipleCustomHooks/>
+    <BrowserRouter>
+      <MainApp/>
+    </BrowserRouter>
 )
 

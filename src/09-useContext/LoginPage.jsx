@@ -6,7 +6,9 @@ export const LoginPage = () => {
   return (
       <>
         <h1 className={'display-5 text-gray-800'}>LoginPage</h1>
-        <pre className={'mt-4'}>
+        <pre
+            aria-label={'pre'}
+            className={'mt-4'}>
           {
             JSON.stringify(user,null,3)
           }

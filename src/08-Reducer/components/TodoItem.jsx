@@ -7,8 +7,12 @@ const TodoItem = ({description, creationTime, id,done, onDeleteTodo,onToggleTodo
         <div
             onDoubleClick={()=>onToggleTodo(id)}
             className={`${done? 'bg-green-300 p-2 m-2 rounded-2xl':'' } flex flex-col gap-2`}>
-          <p className={'text-2xl'}><strong>Todo: </strong>{description}</p>
-          <p className={'text-gray-500'}><strong>Date: </strong>{creationTime}</p>
+          <p
+              aria-label={'todoDescription'}
+              className={'text-2xl'}><strong>Todo: </strong>{description}</p>
+          <p
+              aria-label={'todoDate'}
+              className={'text-gray-500'}><strong>Date: </strong>{creationTime}</p>
         </div>
         <button
             onClick={()=>onDeleteTodo(id)}
